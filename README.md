@@ -6,4 +6,8 @@ Property `queryParams` is NOT available in Swift on `URL` types but only on `NSU
 
 ### Try it:
 
-`swift test`
+Open Package.swift in Xcode and run tests.
+
+### Stackoverflow Question
+
+[SPM library with Objective-C NSURL category not imported into Swift URL?](https://stackoverflow.com/questions/76201998/spm-library-with-objective-c-nsurl-category-not-imported-into-swift-url)
