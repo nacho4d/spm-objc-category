@@ -11,3 +11,5 @@ Open Package.swift in Xcode and run tests.
 ### Stackoverflow Question
 
 [SPM library with Objective-C NSURL category not imported into Swift URL?](https://stackoverflow.com/questions/76201998/spm-library-with-objective-c-nsurl-category-not-imported-into-swift-url)
+
+Reproducing problem: <a href="https://github.com/nacho4d/spm-objc-category/actions/workflows/swift.yml" target=”_blank” ><img src="https://github.com/nacho4d/spm-objc-category/actions/workflows/swift.yml/badge.svg"></a> 
