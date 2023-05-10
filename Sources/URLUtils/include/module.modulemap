@@ -1,3 +1,0 @@
-module URLUtils {
-    header "NSURL+Additions.h"
-}
