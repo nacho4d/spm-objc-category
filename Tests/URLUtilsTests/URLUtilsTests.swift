@@ -1,7 +1,7 @@
 import Foundation
 import XCTest
-//@testable import URLUtils
-import URLUtils
+
+import URLUtilsSwift
 
 class URLUtilsTestsSwift: XCTestCase {
 

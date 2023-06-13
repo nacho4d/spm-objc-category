@@ -15,6 +15,10 @@ let package = Package(
             name: "URLUtils",
             targets: ["URLUtils"]
         ),
+        .library(
+            name: "URLUtilsSwift",
+            targets: ["URLUtilsSwift"]
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -28,9 +32,13 @@ let package = Package(
             dependencies: [],
             publicHeadersPath: "include"
         ),
+        .target(
+            name: "URLUtilsSwift",
+            dependencies: [ "URLUtils" ]
+        ),
         .testTarget(
             name: "URLUtilsTests",
-            dependencies: ["URLUtils"]
+            dependencies: ["URLUtils", "URLUtilsSwift"]
         ),
     ]
 )
