@@ -24,10 +24,11 @@ Run `swift test`.
 
 I asked the same question:
 
-[Stackoverflow - SPM library with Objective-C NSURL category not imported into Swift URL?](https://stackoverflow.com/questions/76201998/spm-library-with-objective-c-nsurl-category-not-imported-into-swift-url)
+- [Stackoverflow - SPM library with Objective-C NSURL category not imported into Swift URL?](https://stackoverflow.com/questions/76201998/spm-library-with-objective-c-nsurl-category-not-imported-into-swift-url)
+- [SwiftForums - Why SPM library with Objective-C NSURL category is not available in Swift URL type?](https://forums.swift.org/t/why-spm-library-with-objective-c-nsurl-category-is-not-available-in-swift-url-type/65005)
 
-[SwiftForums - Why SPM library with Objective-C NSURL category is not available in Swift URL type?](https://forums.swift.org/t/why-spm-library-with-objective-c-nsurl-category-is-not-available-in-swift-url-type/65005)
+### 2023/06/14 Solution added 
 
-Solution explanation: NSURL and URL and not the same type and the compiler does the magic that makes them look like same, it is implemented using ReferenceConvertible. I think that only happens for types inside Foundation and/or App module. However if I create my own frameworks/library it will be a different module, different compiling time. Hence, I will not get the same benefits so I need to create explici target for Swift too.
+Solution explanation: NSURL and URL and not the same type and the compiler does the magic that makes them look like same, it is implemented using ReferenceConvertible. I think that only happens for types inside Foundation and/or App module. However if I create my own frameworks/library it will be a different module, different compiling time. Hence, I will not get the same benefits so I need to explicitly create a target for Swift too.
 
 Problem solved in this [Pull Request](https://github.com/nacho4d/spm-objc-category/pull/2). <a href="https://github.com/nacho4d/spm-objc-category/actions/workflows/swift.yml" target=”_blank” ><img src="https://github.com/nacho4d/spm-objc-category/actions/workflows/swift.yml/badge.svg"></a> 
